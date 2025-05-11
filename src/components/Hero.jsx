@@ -2,7 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiDownload, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiDownload} from 'react-icons/fi';
+import { RiTwitterXFill } from "react-icons/ri";
+
 import { FaWhatsapp } from 'react-icons/fa';
 import { PiGlobeLight } from "react-icons/pi";
 import { MdOutlineSettingsPhone } from "react-icons/md";
@@ -95,13 +97,13 @@ const Hero = () => {
             >
               <a 
                 href="#contact" 
-                className="text-gray-500 text-center font-semibold  px-5 justify-center rounded transition-all flex items-center gap-2"
+                className="text-gray-500 landscape:justify-start  text-center font-semibold   justify-center rounded transition-all flex items-center gap-2"
               >
                 <PiGlobeLight /> Dar es salaam, Tanzania
               </a>
               <a 
                 href="/resume.pdf" 
-                className="text-gray-500 text-center   justify-center font-semibold  px-5 rounded transition-all flex items-center gap-2"
+                className="text-gray-500 landscape:justify-start text-center   justify-center font-semibold  rounded transition-all flex items-center gap-2"
                 download
               >
                 <MdOutlineSettingsPhone /> +255 123 456 789
@@ -121,7 +123,7 @@ const Hero = () => {
                 <FiLinkedin size={15} />
               </a>
               <a href="https://twitter.com/username" target="_blank" rel="noreferrer" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors">
-                <FiTwitter size={15} />
+                <RiTwitterXFill size={15} />
               </a>
               <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors">
                 <FaWhatsapp size={15} />
