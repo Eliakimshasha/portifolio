@@ -15,11 +15,11 @@ const Skills = () => {
     "Express JS",
     "JavaScript",
     "React",
-    "Solidity",
+    "Tailwind CSS",
     "SQL",
-    "Linux",
-    "AWS",
-    "Git"
+    "Solidity",
+    "Blockchain",
+    "Web3.js"
   ];
 
   const containerVariants = {
