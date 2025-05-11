@@ -11,7 +11,7 @@ const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
-    <section id="home" className="bg-white py-7 flex items-center relative">      
+    <section id="home" className="bg-white py-7 md:pb-7 pb-1 flex items-center relative">      
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-start items-center justify-between">
           <motion.div 
@@ -29,7 +29,27 @@ const Hero = () => {
               Hi, I&apos;m Eliakim William
             </motion.h1>
             
-           
+            <motion.div 
+            className="w-full mb-5 md:hidden rounded-full flex justify-center md:justify-end"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            <div className="w-44 h-44 md:w-72 md:h-72 relative">
+              {!imageLoaded && (
+                <div className="w-full h-full rounded-lg bg-gray-200 flex items-center justify-center text-gray-500 text-lg font-medium">
+                  EW
+                </div>
+              )}
+              <Image
+                src={image}
+                alt="Eliakim William"
+                className={`w-full h-full rounded-full object-cover   ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                onLoad={() => setImageLoaded(true)}
+                onError={() => setImageLoaded(false)}
+              />
+            </div>
+          </motion.div>
             
             <motion.p 
               className="text-lg text-gray-600 mb-8 text-center md:text-start max-w-2xl"
@@ -90,7 +110,7 @@ const Hero = () => {
           </motion.div>
           
           <motion.div 
-            className="w-full md:w-2/5 flex justify-center md:justify-end"
+            className="w-full hidden md:flex md:w-2/5  justify-center md:justify-end"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.5 }}

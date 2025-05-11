@@ -21,7 +21,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-10 bg-white">
+    <section id="about" className="py-10 md:pt-10 pt-5 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
