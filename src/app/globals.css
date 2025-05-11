@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --primary-color: #0070f3;
+  --secondary-color: #00ccbf;
+  --dark-color: #1a202c;
+  --light-color: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--dark-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 25px;
+}
+a{
+  font-family: 'Anaheim', sans-serif;
+
+}
+
+p,  span, label, ::placeholder, button {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 14px;
+
+}
+
+/* Clean container with consistent spacing */
+.container {
+  width: 75%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* Responsive design */
+@media screen and (max-width: 760px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* Main section spacing */
+section {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Simple clean scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}

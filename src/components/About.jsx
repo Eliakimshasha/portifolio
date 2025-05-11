@@ -1,0 +1,48 @@
+'use client'
+
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+const About = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1
+  });
+
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      }
+    }
+  };
+
+  return (
+    <section id="about" className="py-10 bg-white">
+      <div className="container mx-auto px-4">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={variants}
+        >
+          <h2 className="text-2xl font-bold mb-6">About</h2>
+          
+          <div className="bg-white rounded-lg">
+            <p className="text-gray-700 mb-4 text-base leading-relaxed">
+              Three years of experience as a software developer, with a focus on building financial 
+              products. I have expertise in building mobile apps, web apps, and APIs, and for two 
+              years I have been able to work with a Fintech startup that builds financial 
+              infrastructure for businesses.
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
