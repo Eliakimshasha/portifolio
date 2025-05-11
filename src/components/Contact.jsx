@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-white" ref={ref}>
+    <section id="contact" className="py-16 print:hidden bg-white" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-1">
           <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>

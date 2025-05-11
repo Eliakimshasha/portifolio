@@ -55,7 +55,7 @@ export default function Footer() {
   };
   
   return (
-    <footer className="container  text-black py-6 mt-16">
+    <footer className="container print:hidden text-black py-6 mt-16">
       <div className=" mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">

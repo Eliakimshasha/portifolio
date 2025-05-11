@@ -43,7 +43,7 @@ const Hero = () => {
             </motion.p>
             
             <motion.div 
-              className="flex flex-wrap justify-center md:justify-normal gap-4"
+              className="flex print:hidden justify-center md:justify-normal gap-2 md:gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.8 }}
@@ -64,7 +64,7 @@ const Hero = () => {
             </motion.div>
             
             <motion.div 
-              className="flex justify-center md:justify-normal space-x-4 mt-8"
+              className="flex print:hidden justify-center md:justify-normal space-x-4 mt-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 1 }}
