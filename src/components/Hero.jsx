@@ -21,7 +21,7 @@ const Hero = () => {
             transition={{ duration: 0.7 }}
           >
             <motion.h1 
-              className="text-4xl md:text-5xl font-bold mb-4 text-gray-800"
+              className="text-4xl md:text-5xl text-center md:text-start font-bold mb-4 text-gray-800"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
@@ -32,7 +32,7 @@ const Hero = () => {
            
             
             <motion.p 
-              className="text-lg text-gray-600 mb-8 max-w-2xl"
+              className="text-lg text-gray-600 mb-8 text-center md:text-start max-w-2xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
@@ -43,7 +43,7 @@ const Hero = () => {
             </motion.p>
             
             <motion.div 
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap justify-center md:justify-normal gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.8 }}
@@ -64,7 +64,7 @@ const Hero = () => {
             </motion.div>
             
             <motion.div 
-              className="flex space-x-4 mt-8"
+              className="flex justify-center md:justify-normal space-x-4 mt-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 1 }}

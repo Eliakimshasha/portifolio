@@ -95,7 +95,7 @@ const CommandMenu = () => {
     <>
       {/* Command menu button */}
       <button 
-        className="fixed bottom-6 cursor-pointer md:right-44 right-2 p-2 bg-white rounded-full border-[1px] border-black/20 shadow-lg hover:shadow-xl transition-shadow z-40"
+        className="fixed bottom-5 cursor-pointer md:right-40 right-2 p-2 bg-white rounded-full border-[1px] border-black/20 shadow-lg hover:shadow-xl transition-shadow z-40"
         onClick={toggleMenu}
         aria-label="Open command menu"
       >
