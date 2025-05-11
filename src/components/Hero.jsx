@@ -10,7 +10,7 @@ import { PiGlobeLight } from "react-icons/pi";
 import { MdOutlineSettingsPhone } from "react-icons/md";
 
 import Image from 'next/image';
-import image from '../../public/assets/kim.png';
+import profile from '../../public/assets/img11.jpg';
 
 const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -36,21 +36,21 @@ const Hero = () => {
             </motion.h1>
             
             <motion.div 
-            className="w-full mb-5 md:hidden rounded-full flex justify-center md:justify-end"
+            className="w-full mb-5 md:hidden rounded-full flex justify-center relative overflow-hidden"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
-            <div className="w-44 h-44 md:w-72 md:h-72 relative">
+            <div className="w-44 h-44 md:w-72  md:h-72 relative">
               {!imageLoaded && (
-                <div className="w-full h-full rounded-lg bg-gray-200 flex items-center justify-center text-gray-500 text-lg font-medium">
+                <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-gray-500 text-lg font-medium">
                   EW
                 </div>
               )}
               <Image
-                src={image}
+                src={profile}
                 alt="Eliakim William"
-                className={`w-full h-full rounded-full object-cover   ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                className={`w-full h-fit object-cover rounded-full absolute -top-9 left-0   ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                 onLoad={() => setImageLoaded(true)}
                 onError={() => setImageLoaded(false)}
               />
@@ -137,21 +137,21 @@ const Hero = () => {
           </motion.div>
           
           <motion.div 
-            className="w-full hidden md:flex md:w-2/5  justify-center md:justify-end"
+            className="w-full hidden md:flex md:w-2/5   justify-center md:justify-end"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
-            <div className="w-64 h-64 md:w-72 md:h-72 relative">
+            <div className="w-64 h-64 md:w-72  rounded-lg overflow-hidden md:h-72 relative">
               {!imageLoaded && (
                 <div className="w-full h-full rounded-lg bg-gray-200 flex items-center justify-center text-gray-500 text-lg font-medium">
                   EW
                 </div>
               )}
               <Image
-                src={image}
+                src={profile}
                 alt="Eliakim William"
-                className={`w-full h-full object-cover rounded-lg absolute top-0 left-0 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                className={`w-full h-fit object-cover rounded-lg absolute -top-[52px] left-0 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                 onLoad={() => setImageLoaded(true)}
                 onError={() => setImageLoaded(false)}
               />
