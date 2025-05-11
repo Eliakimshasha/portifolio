@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiDownload, FiPhone, FiMapPin } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
+import { PiGlobeLight } from "react-icons/pi";
+import { MdOutlineSettingsPhone } from "react-icons/md";
+
 import Image from 'next/image';
 import image from '../../public/assets/kim.png';
 
@@ -14,6 +17,7 @@ const Hero = () => {
     <section id="home" className="bg-white py-7 md:pb-7 pb-1 flex items-center relative">      
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-start items-center justify-between">
+          <div className='text-black bg-black/10 mb-3 md:hidden px-3 py-[1px] rounded-sm text-xs'>Portfolio</div>
           <motion.div 
             className="w-full md:w-3/5 mb-10 md:mb-0"
             initial={{ opacity: 0, y: 20 }}
@@ -80,6 +84,27 @@ const Hero = () => {
                 download
               >
                 Download CV <FiDownload />
+              </a>
+            </motion.div>
+
+            <motion.div 
+              className="hidden print:block justify-center md:justify-normal gap-2 md:gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.8 }}
+            >
+              <a 
+                href="#contact" 
+                className="text-gray-500 text-center font-semibold  px-5 justify-center rounded transition-all flex items-center gap-2"
+              >
+                <PiGlobeLight /> Dar es salaam, Tanzania
+              </a>
+              <a 
+                href="/resume.pdf" 
+                className="text-gray-500 text-center   justify-center font-semibold  px-5 rounded transition-all flex items-center gap-2"
+                download
+              >
+                <MdOutlineSettingsPhone /> +255 123 456 789
               </a>
             </motion.div>
             

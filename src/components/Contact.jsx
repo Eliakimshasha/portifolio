@@ -63,7 +63,7 @@ const Contact = () => {
           
           {/* Form Column */}
           <motion.div
-            className="lg:col-span-3 bg-white rounded-lg shadow-sm p-8"
+            className="lg:col-span-3 bg-white rounded-lg shadow-sm p-8 md:px-8 px-3"
             initial={{ opacity: 0, x: 20 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
             transition={{ duration: 0.5 }}

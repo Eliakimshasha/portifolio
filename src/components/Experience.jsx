@@ -20,7 +20,7 @@ const Experience = () => {
       technologies: "React, TypeScript, Flutter, Python"
     },
     {
-      title: "System administrator → Full Stack Developer",
+      title: "Full Stack Developer",
       company: "Cheka Plus",
       location: "Remote",
       period: "2023 - 2024",
@@ -78,12 +78,12 @@ const Experience = () => {
               </div>
               
              <div className='flex items-center gap-4 mb-4'>
-             <p className="text-gray-600">{exp.title}</p>
+              <p className="text-gray-600">{exp.title}</p>
 
-             <div className="text-xs font-md text-black bg-black/10 px-3 rounded-sm py-[1px] flex items-center">
-               
-                {exp.location}
-              </div>
+              <div className="text-xs font-md text-black bg-black/10 px-3 rounded-sm py-[1px] flex items-center">
+                
+                  {exp.location}
+                </div>
              </div>
               
               <p className="text-gray-700 text-sm">{exp.description}</p>
