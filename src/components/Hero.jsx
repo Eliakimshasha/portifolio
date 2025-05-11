@@ -148,7 +148,15 @@ const Hero = () => {
                   EW
                 </div>
               )}
-              <Image
+              {/* <Image
+                src={profile}
+                alt="Eliakim William"
+                className={`w-full h-fit object-cover rounded-lg absolute -top-[29px] left-0 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                onLoad={() => setImageLoaded(true)}
+                onError={() => setImageLoaded(false)}
+              /> */}
+
+<Image
                 src={profile}
                 alt="Eliakim William"
                 className={`w-full h-fit object-cover rounded-lg absolute -top-[52px] left-0 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}

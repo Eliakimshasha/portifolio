@@ -10,12 +10,12 @@ const Skills = () => {
   });
 
   const skills = [
-    "Python",
-    "Flutter",
-    "Dart",
+    "Next JS",
+    "React Native",
+    "Express JS",
     "JavaScript",
     "React",
-    "Django",
+    "Solidity",
     "SQL",
     "Linux",
     "AWS",
