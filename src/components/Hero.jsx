@@ -136,35 +136,33 @@ const Hero = () => {
             </motion.div>
           </motion.div>
           
-          <motion.div 
-            className="w-full hidden md:flex md:w-2/5   justify-center md:justify-end"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-          >
-            <div className="w-64 h-64 md:w-72  rounded-lg overflow-hidden md:h-72 relative">
-              {!imageLoaded && (
-                <div className="w-full h-full rounded-lg bg-gray-200 flex items-center justify-center text-gray-500 text-lg font-medium">
-                  EW
-                </div>
-              )}
-              {/* <Image
-                src={profile}
-                alt="Eliakim William"
-                className={`w-full h-fit object-cover rounded-lg absolute -top-[29px] left-0 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-                onLoad={() => setImageLoaded(true)}
-                onError={() => setImageLoaded(false)}
-              /> */}
-
-<Image
-                src={profile}
-                alt="Eliakim William"
-                className={`w-full h-fit object-cover rounded-lg absolute -top-[52px] left-0 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-                onLoad={() => setImageLoaded(true)}
-                onError={() => setImageLoaded(false)}
-              />
-            </div>
-          </motion.div>
+        <motion.div
+      className="w-full hidden md:flex md:w-2/5 justify-center md:justify-end"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.7, delay: 0.5 }}
+    >
+      <div className="w-64 h-64 md:w-72 md:h-72 rounded-lg overflow-hidden relative">
+        {!imageLoaded && (
+          <div className="w-full h-full rounded-lg bg-gray-200 flex items-center justify-center text-gray-500 text-lg font-medium">
+            EW
+          </div>
+        )}
+        
+        <Image
+          src={profile}
+          alt="Eliakim William"
+          width={400}
+          height={500}
+          className={`w-full h-full object-cover rounded-lg ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+          onLoad={() => setImageLoaded(true)}
+          onError={() => setImageLoaded(false)}
+        />
+        
+        {/* Gradient overlay - full width and height positioned at bottom */}
+        <div className="absolute inset-0 bg-gradient-to-t from-red-900 via-red-900/50 to-transparent rounded-lg" />
+      </div>
+    </motion.div>
         </div>
       </div>
     </section>
