@@ -19,10 +19,10 @@ function Education() {
         {/* Sokoine University of agriculture */}
         <div className="flex flex-col md:flex-row md:items-center justify-between">
           <div>
-            <div className="text-lg font-semibold text-slate-800">Sokoine University of agriculture</div>
-            <p className="text-gray-600">Diploma In Information Technology</p>
+            <div className="text-lg font-semibold text-slate-800">Mbeya University of Science and Technology</div>
+            <p className="text-gray-600">Diploma In Computer Science</p>
           </div>
-          <div className="text-gray-500 mt-1 md:mt-0 text-[13px]">2020 - 2022</div>
+          <div className="text-gray-500 mt-1 md:mt-0 text-[13px]">2023 - 2026</div>
         </div>
       </div>
     </div>

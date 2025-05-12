@@ -34,9 +34,7 @@ const About = () => {
           <div className="bg-white rounded-lg">
             <p className="text-gray-700 mb-4 text-base leading-relaxed">
               Three years of experience as a software developer, with a focus on building financial 
-              products. I have expertise in building mobile apps, web apps, and APIs, and for two 
-              years I have been able to work with a Fintech startup that builds financial 
-              infrastructure for businesses.
+              products. I have expertise in building mobile apps, web apps, and APIs, And for one year, I have worked with a health-tech startup focused on creating wellness infrastructure and customized health plans for users and organizations.
             </p>
           </div>
         </motion.div>

@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Anaheim', sans-serif;
   font-size: 25px;
 }
+#span{
+  font-size: 12px;
+}
 a{
   font-family: 'Anaheim', sans-serif;
 

@@ -15,10 +15,10 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Momoa",
-      description: "Mobile application to help agents to keep track of their cashflow, debt customers, expenses and commissions",
-      technologies: ["Flutter", "Python", "Django", "React", "AWS"],
-      clientProject: false
+      title: "Wellness Discovery",
+      description: "Your partner in health. A platform that provide tailored wellness plans, expert advice, and holistic care solutions.",
+      technologies: ["Next js", "React", "Express js", "AI"],
+      clientProject: true
     },
     {
       id: 2,
