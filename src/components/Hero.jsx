@@ -11,7 +11,6 @@ import { MdOutlineSettingsPhone } from "react-icons/md";
 
 import Image from 'next/image';
 import profile from '../../public/assets/img12.jpg';
-import profile2 from '../../public/assets/img6.jpg';
 
 const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
