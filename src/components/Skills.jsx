@@ -14,12 +14,12 @@ const Skills = () => {
     "React Native",
     "Express JS",
     "JavaScript",
-    "React",
+    "React JS",
     "Tailwind CSS",
     "SQL",
     "Solidity",
     "Blockchain",
-    "Web3.js"
+    "Ethers.js",
   ];
 
   const containerVariants = {
