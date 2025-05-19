@@ -20,6 +20,7 @@ const Skills = () => {
     "Solidity",
     "Blockchain",
     "Ethers.js",
+    "SEO",
   ];
 
   const containerVariants = {
