@@ -127,7 +127,7 @@ const Hero = () => {
               </div>
               
               <div className="relative" onMouseEnter={() => setActiveTooltip(1)} onMouseLeave={() => setActiveTooltip(null)}>
-                <a href="https://linkedin.com/in/username" target="_blank" rel="noreferrer" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors inline-block">
+                <a href="https://linkedin.com/in/eliakim-undefined-95a411324" target="_blank" rel="noreferrer" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors inline-block">
                   <FiLinkedin size={15} />
                 </a>
                 {activeTooltip === 1 && (

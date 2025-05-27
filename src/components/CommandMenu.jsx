@@ -19,8 +19,8 @@ const CommandMenu = () => {
 
   const links = [
     { id: 'personal-website', label: 'Personal Website', category: 'Links', href: '#' },
-    { id: 'github', label: 'GitHub', category: 'Links', href: '#' },
-    { id: 'linkedin', label: 'LinkedIn', category: 'Links', href: '#' },
+    { id: 'github', label: 'GitHub', category: 'Links', href: 'https://github.com/Eliakimshasha' },
+    { id: 'linkedin', label: 'LinkedIn', category: 'Links', href: 'https://www.linkedin.com/in/eliakim-undefined-95a411324/' },
   ];
 
   const allItems = [...actions, ...links];
