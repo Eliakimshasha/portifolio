@@ -8,13 +8,13 @@ function Education() {
       
       <div className="space-y-8">
         {/* University of Dar es Salaam */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between">
+        {/* <div className="flex flex-col md:flex-row md:items-center justify-between">
           <div>
             <div className="text-lg font-semibold text-slate-800">University of Dar es Salaam</div>
             <p className="text-gray-600">Bachelor's Degree in Business Information Technology</p>
           </div>
           <div className="text-gray-500 mt-1 md:mt-0 text-[13px]">2023 - 2026</div>
-        </div>
+        </div> */}
         
         {/* Sokoine University of agriculture */}
         <div className="flex flex-col md:flex-row md:items-center justify-between">
@@ -22,7 +22,15 @@ function Education() {
             <div className="text-lg font-semibold text-slate-800">Mbeya University of Science and Technology</div>
             <p className="text-gray-600">Diploma In Computer Science</p>
           </div>
-          <div className="text-gray-500 mt-1 md:mt-0 text-[13px]">2023 - 2026</div>
+          <div className="text-gray-500 mt-1 md:mt-0 text-[13px]">2023 - current</div>
+        </div>
+
+         <div className="flex flex-col md:flex-row md:items-center justify-between">
+          <div>
+            <div className="text-lg font-semibold text-slate-800">Balili secondary school</div>
+            {/* <p className="text-gray-600">Bachelor's Degree in Business Information Technology</p> */}
+          </div>
+          <div className="text-gray-500 mt-1 md:mt-0 text-[13px]">2019 - 2022</div>
         </div>
       </div>
     </div>

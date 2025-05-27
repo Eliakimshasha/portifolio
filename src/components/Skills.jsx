@@ -11,12 +11,12 @@ const Skills = () => {
 
   const skills = [
     "Next JS",
-    "React Native",
+    // "React Native",
     "Express JS",
     "JavaScript",
     "React JS",
     "Tailwind CSS",
-    "SQL",
+    // "SQL",
     "Solidity",
     "Blockchain",
     "Ethers.js",

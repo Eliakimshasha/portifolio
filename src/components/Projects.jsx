@@ -5,57 +5,62 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { LuDot } from "react-icons/lu";
 
-
 const Projects = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
   });
 
-  const projects = [
-    {
-      id: 1,
-      title: "Wellness Discovery",
-      description: "Your partner in health. A platform that provide tailored wellness plans, expert advice, and holistic care solutions.",
-      technologies: ["Next js", "React", "Express js", "AI"],
-      clientProject: true
-    },
-    {
-      id: 2,
-      title: "Rikwest",
-      description: "Rikwest is Bolt like app for ride sharing between drivers and clients in Tanzania",
-      technologies: ["Flutter", "Dart", "Python"],
-      clientProject: true
-    },
-    {
-      id: 3,
-      title: "Kipenzi",
-      description: "Tinder for Tanzania, building a dating mobile application for Tanzanians",
-      technologies: ["Flutter", "Dart", "Python"],
-      clientProject: true
-    },
-    {
-      id: 4,
-      title: "Shoket",
-      description: "Stripe for developers, a payment processor for developers and small business to easly access payment.",
-      technologies: ["Python", "Django", "Payment API"],
-      clientProject: false
-    },
-    {
-      id: 5,
-      title: "MedPack",
-      description: "Built website and dashboard for company dealing with Health facilities products for managing their procurements, inventory and sales.",
-      technologies: ["React", "TypeScript", "JavaScript"],
-      clientProject: true
-    },
-    {
-      id: 6,
-      title: "Payroll app",
-      description: "A mobile app for managing payroll within organizations and startups",
-      technologies: ["Flutter", "Dart", "Python"],
-      clientProject: true
-    }
-  ];
+ const projects = [
+  {
+    id: 1,
+    title: "Wellness Discovery",
+    description: "Your partner in health. A platform that provides tailored wellness plans, expert advice, and holistic care solutions.",
+    technologies: ["Next.js", "React", "Express.js", "AI", "Tailwind CSS"],
+    clientProject: true,
+    url: "https://bewell.co.tz"
+  },
+  {
+    id: 2,
+    title: "Bonsai Works",
+    description: "A mining company in Tanzania specializing in sustainable mineral extraction and resource management.",
+    technologies: ["React", "Node.js", "Tailwind CSS", "Next.js"],
+    clientProject: true,
+    url: "https://bonsaiworks.co.tz"
+  },
+  {
+    id: 3,
+    title: "GlobalHarvest",
+    description: "A company focused on exporting high-quality Tanzanian crops (e.g., coffee, cashews) to international markets.",
+    technologies: ["Next.js", "React", "Express.js", "Tailwind CSS"],
+    clientProject: true,
+    url: "https://globalharvest.co.tz"
+  },
+  {
+    id: 4,
+    title: "Explore Africa",
+    description: "A tourism platform promoting Tanzanian destinations (e.g., Serengeti, Zanzibar) with booking and travel planning features.",
+    technologies: ["Next.js", "React", "Express.js",  "Tailwind CSS"],
+    clientProject: true,
+    url: "https://exploreafrica.vercel.app"
+  },
+  {
+    id: 5,
+    title: "University Abroad",
+    description: "A study-abroad consultancy helping Tanzanian students access global education opportunities.",
+    technologies: ["Next.js", "React", "Express.js",  "Tailwind CSS"],
+    clientProject: true,
+    url: "https://uar.vercel.app/" // Add actual URL when available
+  },
+  {
+    id: 6,
+    title: "Bonepastor Logistics",
+    description: "A logistics company offering freight, warehousing, and supply chain solutions across Tanzania.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+    clientProject: true,
+    url: "https://bonepastorlogistics.vercel.app/" // Add actual URL when available
+  }
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -94,11 +99,21 @@ const Projects = () => {
             <motion.div
               key={project.id}
               variants={itemVariants}
-              className="border border-gray-200 rounded-lg overflow-hidden"
+              className="border border-gray-200 rounded-lg overflow-hidden  transition-shadow"
             >
               <div className="p-5">
                 <div className="flex items-center justify-between">
-                  <div className="text-lg font-semibold mb-2 flex gap-2 items-center">{project.title} <LuDot/></div>
+                  <div className="text-lg font-semibold mb-2 flex gap-2 items-center">
+                    <a 
+                      href={project.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-gray-500 hover:underline transition-colors"
+                    >
+                      {project.title}
+                    </a>
+                    <LuDot/>
+                  </div>
                   {project.clientProject ? (
                     <div className="text-[10px] bg-gray-100 text-gray-900 px-2 py-1 rounded">Client Project</div>
                   ): (
@@ -108,12 +123,12 @@ const Projects = () => {
                 
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, index) => (
-                    <span 
+                    <div 
                       key={index}
-                      className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded"
+                      className="bg-gray-100 text-gray-700 text-[9px] px-2 py-1 rounded"
                     >
                       {tech}
-                    </span>
+                    </div>
                   ))}
                 </div>
               </div>

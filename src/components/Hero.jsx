@@ -64,9 +64,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
-             Full Stack Engineer With a focus on building financial products. I specialize in creating 
-              modern and responsive web applications. Passionate about developing 
-              elegant and efficient software that solves real-world problems.
+             Full Stack Engineer, specialize in creating modern, responsive, and scalable web applications. While I have experience across different domains, my current passion lies in blockchain technology. I am actively learning Solidity and Ethers.js to develop decentralized applications (DApps) and smart contracts, aiming to contribute to the evolving Web3 ecosystem.
             </motion.p>
             
             <motion.div 
@@ -118,7 +116,7 @@ const Hero = () => {
               transition={{ duration: 0.7, delay: 1 }}
             >
               <div className="relative" onMouseEnter={() => setActiveTooltip(0)} onMouseLeave={() => setActiveTooltip(null)}>
-                <a href="https://github.com/username" target="_blank" rel="noreferrer" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors inline-block">
+                <a href="https://github.com/Eliakimshasha" target="_blank" rel="noreferrer" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors inline-block">
                   <FiGithub size={15} />
                 </a>
                 {activeTooltip === 0 && (
@@ -151,7 +149,7 @@ const Hero = () => {
               </div>
               
               <div className="relative" onMouseEnter={() => setActiveTooltip(3)} onMouseLeave={() => setActiveTooltip(null)}>
-                <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors inline-block">
+                <a href="https://wa.me/0683401481" target="_blank" rel="noreferrer" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors inline-block">
                   <FaWhatsapp size={15} />
                 </a>
                 {activeTooltip === 3 && (
@@ -162,7 +160,7 @@ const Hero = () => {
               </div>
               
               <div className="relative" onMouseEnter={() => setActiveTooltip(4)} onMouseLeave={() => setActiveTooltip(null)}>
-                <a href="mailto:email@example.com" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors inline-block">
+                <a href="mailto:eliakimwilliam2@gmail.com" className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm transition-colors inline-block">
                   <FiMail size={15} />
                 </a>
                 {activeTooltip === 4 && (

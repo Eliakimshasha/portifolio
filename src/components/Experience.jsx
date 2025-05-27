@@ -10,24 +10,32 @@ const Experience = () => {
     threshold: 0.1
   });
 
-  const experiences = [
-    {
-      title: "Software Engineer",
-      company: "Swahilies Inc",
-      location: "Remote",
-      period: "2020 - Current",
-      description: "Built a banking feature for SMEs to access all banking services. Rebuilt mobile app for SMEs bookkeeping and banking. Built a web version of the mobile app for SMEs to access bookkeeping through desktops. Built main internal tools(Dashboards) for management and the company main website.",
-      technologies: "React, TypeScript, Flutter, Python"
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Cheka Plus",
-      location: "Remote",
-      period: "2023 - 2024",
-      description: "Led the development of a mini-app version of Cheka Plus, strategically aligning with Vodacom's M-Pesa app. System Maintenance and updates of the Cheka Plus mobile application and server infrastructure.",
-      technologies: "Flutter, Python, React, TypeScript, JavaScript, Ubuntu, AWS"
-    }
-  ];
+ const experiences = [
+  {
+    title: "Software Developer",
+    company: "Wellness Discovery",
+    location: "Remote",
+    period: "Feb 2025 - June 2025",
+    description: "Developed wellness infrastructure and customized health plans for users and organizations. Built scalable web applications to support health-tech solutions and user management systems.",
+    technologies: "Next Js, TypeScript, Tailwind CSS, JavaScript"
+  },
+  {
+    title: "Software Developer",
+    company: "Naleng Technologies",
+    location: "Intern",
+    period: "July 2024 - Feb 2025",
+    description: "Built multiple web applications across various domains. Gained extensive experience in full-stack development and worked on diverse client projects.",
+    technologies: "Next Js, TypeScript, JavaScript, HTML, Tailwind CSS"
+  },
+  {
+    title: "Software Developer",
+    company: "Zalongwa Technologies",
+    location: "Intern",
+    period: "July 2023 - Nov 2023",
+    description: "Developed web applications and gained foundational experience in software development. Worked on various projects to build responsive and user-friendly web solutions.",
+    technologies: "JavaScript, React, HTML, Tailwind CSS"
+  }
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
