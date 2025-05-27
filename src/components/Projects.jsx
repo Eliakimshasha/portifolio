@@ -42,7 +42,7 @@ const Projects = () => {
     description: "A tourism platform promoting Tanzanian destinations (e.g., Serengeti, Zanzibar) with booking and travel planning features.",
     technologies: ["Next.js", "React", "Express.js",  "Tailwind CSS"],
     clientProject: true,
-    url: "https://exploreafrica.vercel.app"
+    url: "https://exproleafrica.vercel.app/"
   },
   {
     id: 5,
