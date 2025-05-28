@@ -56,8 +56,8 @@ const audioRef = useRef(null);
   return (
     <section id="home" className="bg-white py-7 md:pb-7 pb-1 flex items-center relative">      
       <div className="container mx-auto px-4">
-       <div className='flex py-5 items-center gap-7 border-b border-gray-400 mb-5 pb-3'>
-         <div className="audio-player max-w-md p-4 py-2 bg-gray-200 rounded-lg my-5">
+       <div className='flex print:hidden py-5 flex-col md:flex-row items-center gap-3 md:gap-7 border-b border-gray-400 mb-5 pb-3'>
+         <div className="audio-player max-w-md p-4 py-2 bg-gray-200 rounded-lg my-0 md:my-5">
       <audio
         ref={audioRef}
         src="/audio/audio1.mp3"
