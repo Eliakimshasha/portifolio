@@ -60,7 +60,7 @@ const audioRef = useRef(null);
          <div className="audio-player max-w-md p-4 py-2 bg-gray-200 rounded-lg my-0 md:my-5">
       <audio
         ref={audioRef}
-        src="/audio/audio1.mp3"
+        src="/audio/audio2.mp3"
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
