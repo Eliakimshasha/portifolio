@@ -106,7 +106,7 @@ const audioRef = useRef(null);
        </div>
         <div className="flex flex-col md:flex-row md:items-start items-center justify-between">
 
-          <div className='text-black bg-black/10 mb-3 md:hidden px-3 py-[1px] rounded-sm text-xs'>Portfolio</div>
+          <div className='text-black bg-black/10 mb-3 md:hidden print:hidden px-3 py-[1px] rounded-sm text-xs'>Portfolio</div>
           
           <motion.div 
             className="w-full md:w-3/5 mb-10 md:mb-0"
