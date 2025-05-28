@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiDownload} from 'react-icons/fi';
 import { RiTwitterXFill } from "react-icons/ri";
 
@@ -15,12 +15,99 @@ import profile from '../../public/assets/img12.jpg';
 const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [activeTooltip, setActiveTooltip] = useState(null);
+const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+
+
+  
+   const togglePlayPause = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const handleTimeUpdate = () => {
+    if (audioRef.current) {
+      setCurrentTime(audioRef.current.currentTime);
+      setDuration(audioRef.current.duration || 0);
+    }
+  };
+
+  const handleSeek = (e) => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = parseFloat(e.target.value);
+      setCurrentTime(parseFloat(e.target.value));
+    }
+  };
+
+  const formatTime = (time) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  };
 
   return (
     <section id="home" className="bg-white py-7 md:pb-7 pb-1 flex items-center relative">      
       <div className="container mx-auto px-4">
+       <div className='flex py-5 items-center gap-7 border-b border-gray-400 mb-5 pb-3'>
+         <div className="audio-player max-w-md p-4 py-2 bg-gray-200 rounded-lg my-5">
+      <audio
+        ref={audioRef}
+        src="/audio/audio1.mp3"
+        onTimeUpdate={handleTimeUpdate}
+        onLoadedMetadata={handleTimeUpdate}
+        onEnded={() => setIsPlaying(false)}
+      />
+      
+      <div className="controls flex items-center  gap-3">
+        <div className="flex items-center gap-4">
+          <button
+            onClick={togglePlayPause}
+            className="play-pause bg-black text-white p-1 rounded-full"
+          >
+            {isPlaying ? (
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            )}
+          </button>
+          
+          <div className="time-display text-sm text-gray-600">
+            {formatTime(currentTime)} / {formatTime(duration)}
+          </div>
+        </div>
+        
+       <div className='flex-1 flex items-center'>
+         <input
+          type="range"
+          min="0"
+          max={duration || 100}
+          value={currentTime}
+          onChange={handleSeek}
+          className=" h-1 bg-white w-full rounded-lg appearance-none cursor-pointer"
+        />
+       </div>
+        
+      
+      </div>
+    </div>
+        <div className='text-md '>[ play this track as you read................ ]</div>
+       </div>
         <div className="flex flex-col md:flex-row md:items-start items-center justify-between">
+
           <div className='text-black bg-black/10 mb-3 md:hidden px-3 py-[1px] rounded-sm text-xs'>Portfolio</div>
+          
           <motion.div 
             className="w-full md:w-3/5 mb-10 md:mb-0"
             initial={{ opacity: 0, y: 20 }}
