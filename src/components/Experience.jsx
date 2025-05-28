@@ -80,7 +80,15 @@ const Experience = () => {
                 <div>
                   <div className="text-lg font-semibold text-gray-800">{exp.company}</div>
                 </div>
-                <div className="text-gray-500 text-sm">
+                <div className="text-gray-500 text-sm relative">
+                  <div className="absolute -top-7 right-0 w-20 h-20 grid grid-cols-5 gap-1 opacity-20">
+            {[...Array(25)].map((_, i) => (
+              <div
+                key={`dot-tl-${i}`}
+                className="w-[3px] h-[3px] rounded-full bg-[#02371e9c]"
+              ></div>
+            ))}
+          </div>
                   <span>{exp.period}</span>
                 </div>
               </div>

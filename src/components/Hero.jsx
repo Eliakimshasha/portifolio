@@ -15,7 +15,7 @@ import profile from '../../public/assets/img12.jpg';
 const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [activeTooltip, setActiveTooltip] = useState(null);
-const audioRef = useRef(null);
+  const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -60,8 +60,9 @@ const audioRef = useRef(null);
          <div className="audio-player max-w-md p-4 py-2 bg-gray-200 rounded-lg my-0 md:my-5">
       <audio
         ref={audioRef}
-        src="/audio/audio2.mp3"
+        src="/audio/audio1.mp3"
         onTimeUpdate={handleTimeUpdate}
+        loop
         onLoadedMetadata={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
       />
@@ -84,7 +85,8 @@ const audioRef = useRef(null);
           </button>
           
           <div className="time-display text-sm text-gray-600">
-            {formatTime(currentTime)} / {formatTime(duration)}
+            {/* {formatTime(currentTime)} / {formatTime(duration)} */}
+            contact me
           </div>
         </div>
         

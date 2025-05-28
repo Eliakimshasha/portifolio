@@ -50,7 +50,25 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16 print:hidden bg-white" ref={ref}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-1">
+        <div className="text-center mb-1 relative">
+          {/* Decorative Dots */}
+          <div className="absolute -top-5 md:top-0 left-0 w-20 h-20 grid grid-cols-5 gap-1 opacity-20">
+            {[...Array(25)].map((_, i) => (
+              <div
+                key={`dot-tl-${i}`}
+                className="w-[2px] h-[2px] md:h-[3px] md:w-[3px] rounded-full bg-[#145C3A]"
+              ></div>
+            ))}
+          </div>
+          <div className="absolute -top-5 md:top-0 right-0 w-20 h-20 grid grid-cols-5 gap-1 opacity-20">
+            {[...Array(25)].map((_, i) => (
+              <div
+                key={`dot-tl-${i}`}
+                className="w-[2px] h-[2px] md:h-[3px] md:w-[3px] rounded-full bg-[#145C3A]"
+              ></div>
+            ))}
+          </div>
+
           <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">

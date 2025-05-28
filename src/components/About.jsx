@@ -33,7 +33,7 @@ const About = () => {
           
           <div className="bg-white rounded-lg">
             <p className="text-gray-700 mb-4 text-base leading-relaxed">
-              With three years of experience as a software developer, I have built a variety of web and mobile applications, along with robust backend APIs. For one year, I worked with a health-tech startup, contributing to wellness infrastructure and customized health solutions for users and organizations.
+              With two years of experience as a software developer, I have built a variety of web and mobile applications, along with robust backend APIs. For one year, I worked with a health-tech startup, contributing to wellness infrastructure and customized health solutions for users and organizations.
             </p>
           </div>
         </motion.div>

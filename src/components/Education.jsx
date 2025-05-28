@@ -3,7 +3,16 @@ import React from 'react'
 function Education() {
   return (
     <section id="education" className="py-10">
-    <div className="container mx-auto px-6 ">
+      
+    <div className="container mx-auto px-6 relative">
+       <div className="absolute -top-7 right-3 w-20 h-20 grid grid-cols-5 gap-1 opacity-20">
+            {[...Array(25)].map((_, i) => (
+              <div
+                key={`dot-tl-${i}`}
+                className="w-[2px] h-[2px] md:w-[3px] md:h-[3px] rounded-full bg-[#145C3A]"
+              ></div>
+            ))}
+          </div>
       <h2 className="text-2xl font-bold text-slate-800 mb-6">Education</h2>
       
       <div className="space-y-8">
