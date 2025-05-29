@@ -95,7 +95,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-16 bg-white">
       <div className="container relative mx-auto px-4">
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 z-10 overflow-hidden">
             <div className="absolute -right-10 -top-[290px] w-[20rem] h-[0rem]  border border-black/10"></div>
             <div className="absolute -right-10 -top-[270px] w-[20rem] h-[0rem]  border border-black/10"></div>
             <div className="absolute -right-10 -top-[280px] w-[20rem] h-[0rem]  border border-black/10"></div>
@@ -113,7 +113,7 @@ const Projects = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 relative z-20 md:grid-cols-2 gap-6"
         >
           {projects.map((project) => (
             <motion.div
