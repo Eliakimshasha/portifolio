@@ -44,17 +44,17 @@ const Projects = () => {
   },
   {
     id: 4,
-    title: "Explore Africa",
-    description: "A tourism platform promoting Tanzanian destinations (e.g., Serengeti, Zanzibar) with booking and travel planning features.",
+    title: "Hade Stays",
+    description: "A comprehensive accommodation booking platform specializing in East African destinations, offering stays and co-working spaces across Tanzania, Kenya, and South Africa with integrated tour packages.",
     technologies: ["Next.js", "React", "Express.js",  "Tailwind CSS"],
     clientProject: true,
   
-    url: "https://exproleafrica.vercel.app/"
+    url: "https://hadestays.vercel.app/"
   },
   {
     id: 5,
-    title: "University Abroad",
-    description: "A study-abroad consultancy helping Tanzanian students access global education opportunities.",
+    title: "Jointly",
+    description: "A travel booking platform focused on Tanzanian destinations with flexible payment options, offering safari packages, Mt. Kilimanjaro expeditions, and corporate retreats to make premium travel experiences accessible to all budgets.",
     technologies: ["Next.js", "React", "Express.js",  "Tailwind CSS"],
     clientProject: true,
   
