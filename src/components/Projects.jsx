@@ -58,7 +58,7 @@ const Projects = () => {
     technologies: ["Next.js", "React", "Express.js",  "Tailwind CSS"],
     clientProject: true,
   
-    url: "https://uar.vercel.app/" // Add actual URL when available
+    url: "https://rejo.vercel.app/" // Add actual URL when available
   },
   {
     id: 6,
