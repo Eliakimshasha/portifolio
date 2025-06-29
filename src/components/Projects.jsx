@@ -34,16 +34,17 @@ const Projects = () => {
 
       url: "https://bonsaiworks.co.tz",
     },
-    {
-      id: 5,
-      title: "GlobalHarvest",
+     {
+      id: 3,
+      title: "Jointly",
       description:
-        "A company focused on exporting high-quality Tanzanian crops (e.g., coffee, cashews) to international markets.",
+        "A travel booking platform focused on Tanzanian destinations with flexible payment options, offering safari packages, Mt. Kilimanjaro expeditions, and corporate retreats to make premium travel experiences accessible to all budgets.",
       technologies: ["Next.js", "React", "Express.js", "Tailwind CSS"],
       clientProject: true,
 
-      url: "https://globalharvest.co.tz",
+      url: "https://rejo.vercel.app/", // Add actual URL when available
     },
+   
     {
       id: 4,
       title: "Hade Stays",
@@ -54,16 +55,17 @@ const Projects = () => {
 
       url: "https://hadestays.vercel.app/",
     },
-    {
-      id: 3,
-      title: "Jointly",
+     {
+      id: 5,
+      title: "GlobalHarvest",
       description:
-        "A travel booking platform focused on Tanzanian destinations with flexible payment options, offering safari packages, Mt. Kilimanjaro expeditions, and corporate retreats to make premium travel experiences accessible to all budgets.",
+        "A company focused on exporting high-quality Tanzanian crops (e.g., coffee, cashews) to international markets.",
       technologies: ["Next.js", "React", "Express.js", "Tailwind CSS"],
       clientProject: true,
 
-      url: "https://rejo.vercel.app/", // Add actual URL when available
+      url: "https://globalharvest.co.tz",
     },
+   
     {
       id: 6,
       title: "Bonepastor Logistics",
